@@ -1,0 +1,165 @@
+
+h1, h2 {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header, nav, footer, section, article, div {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.image-text {
+    display: inline;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.images {
+    width: 60%;
+    height: 200px;
+    vertical-align: top;
+    float: left;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__menu {
+    display: none;
+}
+
+.header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    min-height: 56px;
+    transition: min-height 0.3s;
+}
+
+.header__inner {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__logo {
+    height: 85px;
+    margin-right: 1em;
+    vertical-align: top;
+    margin-top: 12px;
+}
+
+.header__title {
+    font-weight: 300;
+    font-size: 3em;
+    margin: 0.75em 0.25em;
+    display: inline-block;
+    color: #2d3c49;
+}
+
+.header_subtitle {
+    font-weight: 300;
+    font-size: 1.25em;
+    margin: 0.75em 0.25em;
+    display: inline-block;
+    color: #2d3c49;
+}
+
+/**
+Panels
+ */
+
+main {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-panel {
+    width: 33.3333%;
+    order: -1;
+}
+
+.right-panel {
+    width: 33.3333%;
+    order: 2
+}
+
+.center-up {
+    width: 33.3333%;
+    order: 1;
+}
+
+.center-low {
+    width: 100%;
+    order: 3;
+}
+
+/**
+Navigation
+ */
+.nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav__list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    line-height: 24px;
+    padding: 24px;
+    text-transform: uppercase;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #616161;
+    padding: 1.5em;
+    cursor: pointer;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    color: #212121;
+}
+
+/**
+Footer
+ */
+footer {
+    border-top: 1px solid #E0E0E0;
+    padding: 1em;
+    width: 100%;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    padding: 1.5em;
+}

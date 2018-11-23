@@ -1,0 +1,127 @@
+/* For smaller screens */
+@media screen and (max-width: 450px) {
+    .header__logo {
+        height: 48px;
+        margin-right: 0.5em;
+    }
+
+    .header__title {
+        margin-left: 0;
+        font-size: 2em;
+        vertical-align: bottom;
+    }
+
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 300px;
+        position: absolute;
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
+        transition: transform 0.3s ease;
+    }
+
+    .nav.open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .nav__item {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .header__menu {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        padding: 1em;
+        cursor: pointer;
+    }
+
+    .right-panel, .left-panel, .center-up, .center-low {
+        width: 100%;
+    }
+
+    .header__logo {
+        height: 72px;
+        margin-right: 1em;
+        vertical-align: top;
+        margin-top: 12px;
+    }
+
+    .header__title {
+        font-weight: 300;
+        font-size: 1.5em;
+        margin: 0.75em 0.25em;
+        display: inline-block;
+        color: #2d3c49;
+    }
+
+    .header_subtitle {
+        display: inline-block;
+        width: 120px;
+        font-size: 1em;
+    }
+
+}
+
+/* For medium screens */
+@media screen and (min-width: 451px ) and (max-width: 740px) {
+    .right-panel {
+        width: 50%;
+        order: 3;
+    }
+
+    .left-panel {
+        width: 50%;
+        order: 1;
+    }
+
+    .center-up {
+        width: 50%;
+        order: 2;
+    }
+
+    .center-low {
+        width: 50%;
+        order: 3;
+    }
+
+    .header__logo {
+        height: 72px;
+        margin-right: 1em;
+        vertical-align: top;
+        margin-top: 12px;
+    }
+
+    .header__title {
+        font-weight: 300;
+        font-size: 1.5em;
+        margin: 0.75em 0.25em;
+        display: inline-block;
+        color: #2d3c49;
+    }
+
+    .header_subtitle {
+        font-weight: 300;
+        font-size: 1em;
+        margin: 0.75em 0.25em;
+        display: inline-block;
+        color: #2d3c49
+    }
+}
+
+/*
+For bigger screens
+ */
+@media screen and (min-width: 970px) {
+    main, header, footer, .header__inner, .nav, .content {
+        width: 970px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
